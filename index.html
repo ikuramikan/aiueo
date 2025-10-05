@@ -3,59 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ikuramikan homepage index</title>
-  <link rel="stylesheet" href="style.css">
+  <title>ikuramikan | ホーム</title>
+  <meta name="description" content="ikuramikan のホームページのホーム">
+  <link rel="canonical" href="./index.html">
+  <link rel="icon" href="img/icon.jpg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>いくらみかん　雑記</h1>
-    <nav>
+  <header class="site-header">
+    <h1 class="site-title">ikuramikan</h1>
+    <div class="header-ornament" aria-hidden="true">
+      <svg viewBox="0 0 600 80" role="presentation">
+        <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 40 H190 c20 0 20-24 40-24 s20 24 40 24 s20-12 30-12 s10 12 30 12 s20-24 40-24 s20 24 40 24 H580"/>
+          <path d="M300 20 c-8 8 -8 24 0 32 c8 -8 8 -24 0 -32 z"/>
+          <circle cx="260" cy="40" r="2.2"/>
+          <circle cx="340" cy="40" r="2.2"/>
+        </g>
+      </svg>
+    </div>
+    <nav class="site-nav" aria-label="メインナビゲーション">
       <ul>
-        <li><a href="index.html" class="active">ホーム</a></li>
-        <li><a href="random_note.html">雑記</a></li>
+        <li><a href="index.html" aria-current="page" class="active">ホーム</a></li>
+        <li><a href="pages/random_note.html">雑記</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="intro">
-    <h2>Welcome</h2>
-    <p>
-        このサイトは　<b>いくらみかん</b> a.k.a. <b>たこわさを食べすぎるのは危険</b>　が備忘録としてやっています．
-        事実と自身の考えは極力分別しますが，事実を誤認していたり混乱していたり，内容の真偽は怪しいです．
-        信じないでください．
-    </p>
-  </section>
+  <main id="main">
+    <section id="intro">
+      <h2>Welcome</h2>
+      <p class="lead">
+        いくらみかん（たこわさを食べすぎるのは危険）の個人サイトです．
+        メモや雑記，リンクなどを置いていきます．
+      </p>
+    </section>
 
-  <section id="about">
-    <h2>About me</h2>
-    <div class="about-container">
-        <!-- 左側：プロフィール画像 -->
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-container ornate">
         <div class="profile-image-container">
-          <img src="img/icon.jpg" alt="私のアイコン" class="profile-icon">
+          <img src="img/icon.jpg" alt="プロフィールアイコン" class="profile-icon">
         </div>
-        <!-- 右側：テキスト -->
         <div class="about-text">
-        <h3>いくらみかん a.k.a. たこわさを食べすぎるのは危険とは</h3>
+          <h3>いくらみかん（たこわさを食べすぎるのは危険）</h3>
           <p>
-            半分ニートの生活を送ろうと思っていたら，気づかぬうちに半分どころではなく全体的にニートになってしまいました．
-            助けてください．
+            フリーター．
             制御理論や数理最適化，幾何学に興味があります．
-
-            自宅警備の仕事さえAIに奪われないか戦々恐々としながら，Twitter（現X）をパトロールする日々を過ごしています．
+            最近のAIの発展で仕事が奪われてしまうことを危惧しています（無職なのに）．
           </p>
           <h3>アカウント</h3>
-          <p><a href="https://x.com/ao41977991">Twitter（現X）</a>　<a href="https://github.com/ikuramikan/">GitHub</a></p>
+          <p>
+            <a href="https://x.com/ao41977991" target="_blank" rel="noopener noreferrer">X（Twitter）</a>
+            ／
+            <a href="https://github.com/ikuramikan/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
         </div>
       </div>
-  </section>
-
-
-
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 いくらみかん</p>
+    <p>&copy; 2025 ikuramikan</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

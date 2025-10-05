@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Sitemap: supply if hosted under a domain
+# Sitemap: https://example.com/sitemap.xml
+
